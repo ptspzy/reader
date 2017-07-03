@@ -21,12 +21,14 @@ router.get('/book/:filename', function(req, res, next) {
     var filePath = path.join(ebook, '/1.txt')
 
     console.log(filePath)
-    fs.readFile(filePath, 'utf8', function(err, data) {
+        // var data = fs.readFileSync(filePath, 'utf8');
+        // res.send("<p>" + data.replace(/\r\n/g, "</p><p>") + "</p>");
+    fs.readFile(filePath, { encoding: 'utf-8' }, function(err, data) {
         //console.log(error)
         if (err) throw err;
         console.log(data);
         //return "<p>" + data.replace(/\r\n/g, "</p><p>") + "</p>";
-        res.send("<p>" + data.toString('utf8').replace(/\r\n/g, "</p><p>") + "</p>");
+        res.send("<p>" + data.replace(/\r\n/g, "</p><p>") + "</p>");
         //res.send("{'aa':'bb'}");
     });
 });
