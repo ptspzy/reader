@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <%- include('./partial/common_meta') %>
+    <title><%= title %></title>
+    <link rel="stylesheet" type="text/css" href="/style/common.css">
+    <link rel="stylesheet" type="text/css" href="/style/reader.css">
+</head>
+<body class="default">
+<div class="header-reader">
+	<div class="header-box">
+		<div class="nav">
+			<a href="/#">Reader</a>
+		</div>
+	</div>
+</div>
+
+<div id="chapterContent" class="content-box" v-cloak>
+    <h1></h1>
+    <h2></h2>
+    <div class="content">
+        <%- content %>
+    </div>
+</div>
+<div class="control-top-btn">
+    <div class="control-float">
+        <div class="top-left-btn">
+            <a data-toggle="modal" data-target="#catalogBtn"><i></i>目录</a>
+            <a data-toggle="modal" data-target="#settingBtn"><i></i>设置</a>
+        </div>
+</div>
+<div class="control-bottom-btn">
+    <div class="control-float">
+        <div id="upDownChapter" class="bottom-right-btn">
+
+                <a class="up" href="javascript:void(0)"><i></i>上一章</a>
+
+                <a class="down" href="javascript:void(0)" ><i></i>下一章</a>
+        </div>
+    </div>
+</div>
+<div class="mask"></div>
+<div class="modal" id="catalogBtn">
+    <div class="modal-head">
+        目录
+        <a data-dismiss="modal">&times;</a>
+    </div>
+    <div class="modal-body">
+        <div class="catalog">
+            <ul>
+                <li><a href="javascript:void(0)"></a>
+                    <span>vip</span>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="modal" id="settingBtn">
+    <div class="modal-head">
+        设置
+        <a data-dismiss="modal">&times;</a>
+    </div>
+    <div class="modal-body">
+        <div class="setting">
+            <div class="set-bg">
+                <span>背景颜色：</span><a class="selected" data-color="default"></a><a data-color="greenBg"></a><a
+                        data-color="pinkBg"></a><a data-color="darkBg"></a>
+            </div>
+            <div class="set-font">
+                <span>字体大小：</span><a class="large-font">+</a><span class="font-size"></span><a class="small-font">-</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!--script-->
+<script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+<script src="/js/common.js"></script>
+<script src="/js/reader.js"></script>
+</body>
+</html>

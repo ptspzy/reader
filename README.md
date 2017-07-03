@@ -9,3 +9,4 @@
 - https://github.com/vuejs-templates/webpack
 - https://github.com/mozilla/pdf.js
 - https://github.com/zimplexing/vue-nReader
+- https://www.sqlite.org/features.html

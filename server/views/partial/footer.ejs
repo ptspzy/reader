@@ -1,0 +1,118 @@
+<script type="text/x-template" id="rankBook">
+    <div>
+        <h1>{{title}}</h1>
+        <!--<ul>-->
+        <!--<li v-for="item in items.slice(0,1)"><span class="top">1</span><a :href="'/book/'+item.book_id"><img-->
+        <!--class="lazy" src="/img/index-defalut.jpg" :data-original=item.banner :alt=item.book_name :title=item.book_name></a>-->
+        <!--<p>-->
+        <!--<a :href="'/book/'+item.book_id" :title=item.book_name>{{item.book_name.length >7?item.book_name.substr(0,7)+"...":item.book_name}}</a>-->
+        <!--<br>-->
+        <!--<i :title=item.author_name>作者：{{item.author_name.length >6?item.author_name.substr(0,6)+"...":item.author_name}}</i>-->
+        <!--</p>-->
+        <!--</li>-->
+        <!--<li v-for="(item, index) in items.slice(1)"><span :class="{ top: index < 2 }">{{index+2}}</span>-->
+        <!--<p>-->
+        <!--<a :href="'/book/'+item.book_id" :title=item.book_name>{{item.book_name.length >14?item.book_name.substr(0,14)+"...":item.book_name}}</a>-->
+        <!--</p>-->
+        <!--</li>-->
+        <!--</ul>-->
+
+        <ul>
+            <li v-for="item in items.slice(0,1)"><span class="top">1</span><a :href="'/book/'+item.book_id"><img
+                            :src=item.banner :alt=item.book_name :title=item.book_name></a>
+                <p>
+                    <a :href="'/book/'+item.book_id" :title=item.book_name>{{item.book_name.length
+                        >7?item.book_name.substr(0,7)+"...":item.book_name}}</a>
+                    <br>
+                    <i :title=item.author_name>作者：{{item.author_name.length
+                        >6?item.author_name.substr(0,6)+"...":item.author_name}}</i>
+                </p>
+            </li>
+            <li v-for="(item, index) in items.slice(1)"><span :class="{ top: index < 2 }">{{index+2}}</span>
+                <p>
+                    <a :href="'/book/'+item.book_id" :title=item.book_name>{{item.book_name.length
+                        >14?item.book_name.substr(0,14)+"...":item.book_name}}</a>
+                </p>
+            </li>
+        </ul>
+    </div>
+</script>
+<script type="text/x-template" id="rankBookMore">
+    <div>
+        <h1>{{title}}
+            <div class="btns"><a :class="{active:status==0}" v-on:mouseover="switchStatus(0)">周</a><a
+                        :class="{active:status==1}" v-on:mouseover="switchStatus(1)">月</a><a :class="{active:status==2}"
+                                                                                             v-on:mouseover="switchStatus(2)">总</a>
+            </div>
+        </h1>
+        <ul v-show="status==0">
+            <li v-for="item in items0.slice(0,1)"><span class="top">1</span><a :href="'/book/'+item.book_id"><img
+                            class="lazy" :src=item.banner :alt=item.book_name :title=item.book_name></a>
+                <p>
+                    <a :href="'/book/'+item.book_id" :title=item.book_name>{{item.book_name.length > bnTopLimit
+                        ?item.book_name.substr(0,bnTopLimit)+"...":item.book_name}}</a>
+                    <br>
+                    <i :title=item.author_name>作者：{{item.author_name.length
+                        >6?item.author_name.substr(0,6)+"...":item.author_name}}</i>
+                </p>
+            </li>
+            <li v-for="(item, index) in items0.slice(1)"><span :class="{ top: index < 2 }">{{index+2}}</span>
+                <p>
+                    <a :href="'/book/'+item.book_id" :title=item.book_name>{{item.book_name.length
+                        >14?item.book_name.substr(0,14)+"...":item.book_name}}</a>
+                </p>
+            </li>
+        </ul>
+        <ul v-show="status==1">
+            <li v-for="item in items1.slice(0,1)"><span class="top">1</span><a :href="'/book/'+item.book_id"><img
+                            class="lazy" :src=item.banner :alt=item.book_name :title=item.book_name></a>
+                <p>
+                    <a :href="'/book/'+item.book_id" :title=item.book_name>{{item.book_name.length > bnTopLimit
+                        ?item.book_name.substr(0,bnTopLimit)+"...":item.book_name}}</a>
+                    <br>
+                    <i :title=item.author_name>作者：{{item.author_name.length
+                        >6?item.author_name.substr(0,6)+"...":item.author_name}}</i>
+                </p>
+            </li>
+            <li v-for="(item, index) in items1.slice(1)"><span :class="{ top: index < 2 }">{{index+2}}</span>
+                <p>
+                    <a :href="'/book/'+item.book_id" :title=item.book_name>{{item.book_name.length
+                        >14?item.book_name.substr(0,14)+"...":item.book_name}}</a>
+                </p>
+            </li>
+
+        </ul>
+        <ul v-show="status==2">
+            <li v-for="item in items2.slice(0,1)"><span class="top">1</span><a :href="'/book/'+item.book_id"><img
+                            class="lazy" :src=item.banner :alt=item.book_name :title=item.book_name></a>
+                <p>
+                    <a :href="'/book/'+item.book_id" :title=item.book_name>{{item.book_name.length >
+                        bnTopLimit?item.book_name.substr(0,bnTopLimit) +"...":item.book_name}}</a>
+                    <br>
+                    <i :title=item.author_name>作者：{{item.author_name.length
+                        >6?item.author_name.substr(0,6)+"...":item.author_name}}</i>
+                </p>
+            </li>
+            <li v-for="(item, index) in items2.slice(1)"><span :class="{ top: index < 2 }">{{index+2}}</span>
+                <p>
+                    <a :href="'/book/'+item.book_id" :title=item.book_name>{{item.book_name.length
+                        >14?item.book_name.substr(0,14)+"...":item.book_name}}</a>
+                </p>
+            </li>
+
+        </ul>
+        <!--<div class="more"><a href="">查看更多>></a></div>-->
+    </div>
+</script>
+<div class="footer">
+    <div class="footer-box">
+        <div class="about-link">友情链接：<a href="">火星小说</a> <a href="">飞跃中文网</a> <a href="">创别书城</a> <a href="">360小说</a>
+            <a href="">皓阅文学</a> <a href="">九库文学</a> <a href="">咪咕阅读</a> <a href="">甜阅读</a> <a href="">巨匠网</a> <a
+                    href="">汤圆创作</a> <a href="">珊瑚文学</a> <a href="">铁血阅读</a> <a href="">六座小说网</a></div>
+        <div class="nav"><a href="">首页</a> | <a href="">公司简介</a> | <a href="">联系我们</a> | <a href="">加入我们</a></div>
+        <p>请所有作者发布作品时务必遵守国家互联网信息管理办法规定</p>
+        <p>京ICP备13051241号-1 京公网安备110114001124号</p>
+        <p>本站所收录作品、社区话题、书库评论及本站所做之广告均属其个人行为，与本站立场无关</p>
+        <p>Copyright © 2008-2015 Yueloo.com 版权所有 北京东信盈宝文化发展有限公司</p>
+    </div>
+</div>

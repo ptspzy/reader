@@ -1,0 +1,155 @@
+/*重置*/
+body,h1,h2,h3,p,ul,li,dl,dt,dd{ margin: 0; padding: 0; }
+h1,h2,h3{ font-weight: normal; font-size: 14px; }
+a{ text-decoration: none; }
+img{ display: block; }
+input,textarea{ border: none; outline: none; font-family: 'Microsoft Yahei'; color: #808080; }
+textarea{ width: 100%; line-height: 24px; text-indent: 5px; border-radius: 5px; resize: vertical; }
+li{ list-style: none; }
+i{ font-style: normal; }
+
+/*全局*/
+body{ background-color: #f2f2f2; color: #808080; font-size: 14px; font-family: 'Microsoft Yahei'; }
+a{ color: #808080; transition: color 250ms ease; }
+a:hover{ color: #f39c12; }
+span.label{ display: inline-block; padding: 1px 3px; border-radius: 3px; font-size: 12px; margin-right: 5px; color: #fff; }
+span.red-bg{ background-color: #dd4b39; }
+span.orange-bg{ background-color: #f39c12; }
+span.green-bg{ background-color: #00a65a; }
+.banner{ margin: 20px 0; }
+.banner img{ width: 1200px;height:100px; }
+:after{ content: ''; position: absolute; }
+.more{ text-align: center; margin-top: 10px; }
+.more a{ cursor: pointer; }
+
+.main{ width: 1200px; margin: 20px auto; overflow: hidden; min-height: 600px; }
+.main .left-container{ float: left; width: 920px; }
+.main .right-container{ float: right; width: 280px; }
+.main .right-container .click-rank,.main .right-container .week-recommend{ margin-bottom: 20px; }
+
+.container{ background-color: #fff; padding: 20px; border-radius: 5px; }
+.container h1{ font-size: 16px; }
+.container h1 span.right-word{ float: right; color: #999; font-size: 14px; }
+
+/*作品推荐侧边栏*/
+.sidebar{ float: left; width: 220px; height: 400px; margin-left: 20px; }
+.sidebar ul{ margin-top: 10px; }
+.sidebar ul li span{ display: inline-block; width: 18px; height: 18px; color: #fff; text-align: center; line-height: 18px; font-size: 12px; margin-right: 5px; border-radius: 9px; background-color: #b3b3b3; }
+.sidebar ul li span.top{ background-color: #dd4b39; }
+.sidebar ul li p{ display: inline-block; margin-left: 5px; }
+.sidebar ul li p i{ color: #b3b3b3; font-size: 12px; }
+.sidebar ul li p a{ line-height: 31px; }
+.sidebar ul li img{ display: inline-block; vertical-align: middle; width: 65px;margin: 6px 0 10px 10px; }
+
+/*用户中心侧边栏*/
+.user-side{ float: left; width: 200px; }
+.user-side .info{ border-bottom: solid 1px #e5e5e5; }
+.user-side .info .img{ width: 80px; height: 80px; border-radius: 40px; margin: 0 auto; overflow: hidden; }
+.user-side .info .img img{ width:80px; }
+.user-side p{ text-align:center; margin: 10px auto;}
+.user-side p span{ color: #dd4c39; font-size: 20px; font-weight: bold; }
+.user-side ul{ margin-left: 20px}
+.user-side .nav-first{ margin-top: 10px; }
+.user-side ul li{ padding-top: 10px; font-size: 16px; }
+.user-side ul ul li{ margin-left: 10px; font-size: 14px}
+.user-side ul li span{ display: inline-block; width: 15px; height: 15px; background-image: url(../img/icons.png); margin-top: 2px; margin-right: 10px; }
+.user-side ul li .ic1{ background-position: -122px -8px; }
+.user-side ul li .ic2{ background-position: -146px -9px; }
+.user-side ul li .ic3{ background-position: -173px -9px; }
+.user-side ul li .ic4{ background-position: -200px -8px; }
+.user-side ul li .ic5{ background-position: -224px -8px; }
+.user-side ul li .ic6{ background-position: -252px -8px; } 
+
+/*评论*/
+.comment .to-comment{ cursor: pointer; }
+.comment .comment-box,.comment .reply-box{ background-color: #f1f1f1; max-height: 0; overflow: hidden; -webkit-transition: max-height ease 500ms; transition: all ease 500ms; }
+.comment .show-box{ max-height: 200px; margin-top: 10px; }
+.comment .comment-input,.comment .reply-input{ width: 95%; margin: 15px auto; }
+.comment .comment-btn,.comment .reply-btn{ text-align: center; margin-bottom: 15px;  }
+.comment .comment-btn a,.comment .reply-btn a{ display: inline-block; padding: 8px 16px; background-color: #dd4b39; border-radius: 5px; color: #fff; cursor: pointer; }
+.comment .comment-list{ margin-top: 10px; }
+.comment .comment-item{ overflow: hidden; padding: 10px 0; }
+.comment .user-head{ float: left; width: 40px; height: 40px; border-radius: 20px; overflow: hidden; }
+.comment .user-head img{ width: 40px; }
+.comment .comment-item .comment-info{ float: left; width: 810px; margin-left: 20px; }
+.comment .comment-item h1{ color: #f39c12; }
+.comment .icon{ float: right; width: 20px; height: 20px; cursor: pointer; background-image: url(../img/icons.png); }
+.comment .comment-item .comment-info .zan{ background-position: -45px -175px; }
+.comment .comment-item .comment-info .text{ margin-top: 5px; line-height: 22px; display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 2; overflow: hidden; }
+.comment .comment-item .comment-info .text a{ display: block; }
+.comment .comment-item .comment-info .text a:hover{ color: #808080; }
+.comment h2{ height: 20px; margin-top: 5px; color: #b3b3b3; }
+.comment .to-reply{ background-position: -80px -175px; }
+.comment .comment-item .comment-info .reply{ background-color: #f1f1f1; padding: 10px; margin-top: 10px; }
+.comment .comment-item .comment-info p{ line-height: 24px; }
+.comment .comment-item .comment-info p span{ color: #f39c12; }
+
+/*分页*/
+.pagination{ margin-top: 30px; text-align: center; }
+.pagination .page{ display: inline-block; }
+.pagination .page a{ display: inline-block; padding: 3px 9px; border: solid 1px #b3b3b3; border-radius: 3px; margin: 0 3px; cursor: pointer; }
+.pagination .page a.selected{ color: #fff; background-color: #b3b3b3; }
+.pagination .page span{ display: inline-block; padding: 3px 9px; border: solid 1px #b3b3b3; border-radius: 3px; margin: 0 3px; cursor: pointer; }
+
+/*弹出层*/
+.mask{ display: none; width: 100%; background-color: #000; opacity: .5; position: absolute; left: 0; top: 0; }
+.modal{ display: none; width: 1000px; background-color: #fff; position: fixed; top: 60px; left: 50%; margin-left: -500px; border-radius: 4px; }
+.modal .modal-head{ padding: 10px 20px; font-size: 16px; }
+.modal .modal-head a{ float: right; padding: 0 2px; font-size: 20px; margin-top: -3px; cursor: pointer; }
+.modal .modal-body{ padding: 20px; }
+
+/*信息提示框*/
+.showMsg{ position:fixed; width:100%; height:22px; text-align:center; top:50%; left:0; transition:opacity 1s ease; }
+.showMsg span{ display:inline-block; padding:3px 10px; background:#585652; color:#fff; border-radius:2px; }
+
+/*头部*/
+.header{ width: 100%; background-color: #644b3f; }
+.header .header-box{ width: 1200px; margin: 0 auto; height: 80px; }
+.header .header-box .logo{ float: left; width: 115px; height: 115px; margin-top: 10px; }
+.header .header-box .logo img{ width: 115px; }
+.header .header-box .nav{ float: left; width: 550px; margin-left: 30px; margin-top: 25px; }
+.header .header-box .nav a{ float: left; color: #e0e0e0; padding: 5px; margin: 0 30px; font-size: 16px; }
+.header .header-box .nav a:hover{ color: #fff; }
+.header .header-box .search{ float: right; position: relative; width: 270px; margin-top: 20px; }
+.header .header-box .search span{ position: absolute; width: 30px; height: 30px; right: 0; top: 6px; background: url(../img/icons.png) no-repeat -90px 0; cursor: pointer; }
+.header .header-box .search input{ width: 220px; height: 40px; line-height: 20px; background-color: rgba(255,255,255,.5); border-radius: 5px; padding-left: 10px; padding-right: 40px; color: #fff; }
+.header .header-box .search ::-webkit-input-placeholder{ color: #e5e5e5; }
+.header .login{ background-color: #fff; height: 50px; }
+.header .login .login-box{ width: 1200px; margin: 0 auto; }
+.header .login .login-box .login-btn{ float: right; margin-top: 10px; }
+.header .login .login-box .login-btn a:hover{ text-decoration: underline; }
+.header .login .login-box .login-btn a{ float: left; width: 30px; height: 30px; line-height: 30px; margin-left: 15px; cursor: pointer; background-image: url(../img/icons.png); }
+.header .login .login-box .login-btn a:nth-child(1){ background: none; }
+.header .login .login-box .login-btn a:nth-child(2){ background-position: 0 0; }
+.header .login .login-box .login-btn a:nth-child(3){ background-position: -30px 0; }
+.header .login .login-box .login-btn a:nth-child(4){ background-position: -60px 0; }
+.header .login .login-box .user-box{ float: right; margin-top: 8px; }
+.header .login .login-box .user-box a{ float: left; width: 35px; height: 35px;line-height: 35px; margin-left: 15px; cursor: pointer; border-radius: 20px; overflow: hidden; }
+.header .login .login-box .user-box a:nth-child(1){ background: url(../img/icons.png) no-repeat -43px -44px; }
+.header .login .login-box .user-box a img{ width: 35px; }
+.header-reader{ position: fixed; top: 0; width: 100%; background-color: #fff; }
+.header-reader .header-box{ width: 900px; margin: 0 auto; height: 50px; }
+.header-reader .header-box .nav{ float: left; width: 550px;  margin-top: 10px; }
+.header-reader .header-box .nav a{ float: left; padding: 5px; margin: 0 20px; font-size: 16px; }
+.header-reader .login-box .login-btn{ float: right; margin-top: 10px; }
+.header-reader .login-box .login-btn a{ float: left; line-height: 30px; }
+.header-reader .login-box .login-btn a{ float: left; width: 30px; height: 30px; margin-left: 15px; cursor: pointer; background-image: url(../img/icons.png); }
+.header-reader .login-box .login-btn a:nth-child(1){ background:none; }
+.header-reader .login-box .login-btn a:nth-child(2){ background-position: 0 0; }
+.header-reader .login-box .login-btn a:nth-child(3){ background-position: -30px 0; }
+.header-reader .login-box .login-btn a:nth-child(4){ background-position: -60px 0; }
+.header-reader .login-box .user-box{ float: right; margin-top: 8px; }
+.header-reader .login-box .user-box a{ float: left; width: 35px; height: 35px; line-height: 35px; margin-left: 15px; cursor: pointer; border-radius: 20px; overflow: hidden; }
+.header-reader .login-box .user-box a:nth-child(1){ background: url(../img/icons.png) no-repeat -43px -44px; }
+.header-reader .login-box .user-box a img{ width: 35px; }
+/*底部*/
+.footer{ background-color: #fff; }
+.footer .footer-box{ width: 1200px; margin: 0 auto; padding: 20px; }
+.footer .footer-box .about-link{ text-align: center; line-height: 30px; }
+.footer .footer-box .nav{ text-align: center; line-height: 30px; margin-bottom: 10px; }
+.footer .footer-box p{ line-height: 25px; color: #b3b3b3; text-align: center; }
+
+[v-cloak] {
+    display: none;
+}
+
