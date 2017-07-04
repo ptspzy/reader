@@ -1,67 +1,268 @@
-.default{ background-color: #e3d1bd; }
-.default .content-box{ background-color: #f8f0e7; }
-.default .control-float a{ background-color: #f8f0e7; }
+.default {
+    background-color: #e3d1bd;
+}
 
-.greenBg{ background-color: #aad7ab; }
-.greenBg .content-box{ background-color: #ceeccf; }
-.greenBg .control-float a{ background-color: #ceeccf; }
+.default .content-box {
+    background-color: #f8f0e7;
+}
 
-.pinkBg{ background-color: #eacece; }
-.pinkBg .content-box{ background-color: #f8e7e7; }
-.pinkBg .control-float a{ background-color: #f8e7e7; }
+.default .control-float a {
+    background-color: #f8f0e7;
+}
 
-.darkBg{ background-color: #2b2926; }
-.darkBg .content-box{ background-color: #4a4846; }
-.darkBg .control-float a{ background-color: #4a4846; }
+.greenBg {
+    background-color: #aad7ab;
+}
 
-.content-box{ width: 800px; margin: 0 auto; margin-top: 70px; padding: 20px 50px; }
-.content-box h1{ font-size: 26px; text-align: center; }
-.content-box h2{ text-align: center; margin-top: 10px; }
-.content-box .content{user-select: none; margin-top: 30px; }
-.content-box .content p{ text-indent: 32px; line-height: 180%; margin-top: 15px;  }
-.control-top-btn{ position: fixed; width: 100%; left: 0; top: 0; }
-.control-bottom-btn{ position: fixed; width: 100%; left: 0; bottom: 0; }
-.control-float{ width: 900px; margin: 0 auto; position: relative; }
-.top-left-btn{ position: absolute; top: 70px; left: -63px; width: 60px; }
-.bottom-right-btn{ position: absolute; bottom: 0; right: -63px; width: 60px; }
-.control-float a{ display: block; text-align: center; margin-bottom: 2px; border-radius: 2px; font-size: 12px; line-height: 24px; padding-top: 8px; cursor: pointer; }
-.control-float a i{ display: block; width: 30px; height: 30px; margin: 0 auto; background-image: url("../img/icons.png"); }
-.control-float a:hover{ color: #808080; }
-.control-float a:nth-child(1) i{ background-position: -3px -46px; }
-.control-float a:nth-child(2) i{ background-position: -46px -45px; }
-.control-float a:nth-child(3) i{ background-position: -246px -41px; }
-.control-float a:nth-child(4) i{ background-position: 2px -105px; }
-.control-float a:nth-child(5) i{ background-position: -96px -47px; }
-.control-float .bottom-right-btn .up i{ background-position: -142px -42px; }
-.control-float .bottom-right-btn .down i{ background-position: -198px -45px; }
-.catalog{ height: 500px; overflow-y: scroll; margin-top: -10px; }
-.catalog ul li{ font-size: 16px; }
-.catalog ul li{ margin-bottom: 20px; overflow: hidden; }
-.catalog ul li{ float: left; width: 470px; text-indent: 20px; margin: 8px 0; font-size: 14px; }
-.catalog ul li{color: red}
-.setting{ height: 24px; padding: 0 20px; padding-bottom: 10px; }
-.setting div{ float: left; width: 450px; }
-.setting span{ float: left; line-height: 24px; }
-.setting a{ float: left; width: 24px; height: 24px; cursor: pointer; margin-left: 15px; border-radius: 5px; }
-.setting .set-bg a:nth-of-type(1){ background-color: #f8f0e7; }
-.setting .set-bg a:nth-of-type(2){ background-color: #83ebbb; }
-.setting .set-bg a:nth-of-type(3){ background-color: #f2a298; }
-.setting .set-bg a:nth-of-type(4){ background-color: #545451; }
-.setting .set-bg a.selected{ box-shadow: 0 0 6px 1px #646464; }
-.setting .set-font a{ width: 20px; height: 20px; color:#fff;  background-color: #ccc; text-align: center; border: solid 2px #c7c7c7; }
-.setting .set-font span{ margin-left: 15px; }
-.reward{ width: 780px; margin: 0 auto; }
-.reward .reward-box{ height: 120px; }
-.reward .reward-box div{ float: left; width: 100px; margin: 0 15px; border-radius: 5px; background-color: #f1f1f1; text-align: center; padding: 5px 0; cursor: pointer; }
-.reward .reward-box .selected{ box-shadow: 0 0 12px 0 #646464; }
-.reward .reward-box div span{ display: block; height: 90px; background-image: url(../img/rewards.png); background-repeat: no-repeat; }
-.reward .reward-box div:nth-child(1) span{ background-position: 10px 10px; }
-.reward .reward-box div:nth-child(2) span{ background-position: -108px 0; }
-.reward .reward-box div:nth-child(3) span{ background-position: 8px -88px; }
-.reward .reward-box div:nth-child(4) span{ background-position: -97px -93px; }
-.reward .reward-box div:nth-child(5) span{ background-position: -1px -185px; }
-.reward .reward-box div:nth-child(6) span{ background-position: -110px -189px; } 
-.reward .reward-btn{ width: 70px; height: 70px; border-radius: 35px; font-size: 35px; color: #fff; line-height: 70px; text-align: center; background-color: #f39c12; margin: 0 auto; margin-top: 40px; cursor: pointer; }
-.comment .comment-box{ width: 100%;overflow: visible;max-height: 175px;}
-.comment .comment-box textarea{ border: solid 1px #ccc; }
-.comment .comment-btn{ width: 60px; height: 36px; margin: 0 auto; background-color: #dd4b39; color: #fff; text-align: center; line-height: 36px; border-radius: 5px; margin-top: 30px; cursor: pointer; }
+.greenBg .content-box {
+    background-color: #ceeccf;
+}
+
+.greenBg .control-float a {
+    background-color: #ceeccf;
+}
+
+.pinkBg {
+    background-color: #eacece;
+}
+
+.pinkBg .content-box {
+    background-color: #f8e7e7;
+}
+
+.pinkBg .control-float a {
+    background-color: #f8e7e7;
+}
+
+.darkBg {
+    background-color: #2b2926;
+}
+
+.darkBg .content-box {
+    background-color: #4a4846;
+}
+
+.darkBg .control-float a {
+    background-color: #4a4846;
+}
+
+.content-box {
+    width: 800px;
+    margin: 0 auto;
+    margin-top: 70px;
+    padding: 20px 50px;
+}
+
+.content-box h1 {
+    font-size: 26px;
+    text-align: center;
+}
+
+.content-box h2 {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.content-box .content {
+    user-select: none;
+    margin-top: 30px;
+}
+
+.content-box .content p {
+    text-indent: 32px;
+    line-height: 180%;
+    margin-top: 15px;
+}
+
+.control-top-btn {
+    position: fixed;
+    width: 100%;
+    left: 0;
+    top: 0;
+}
+
+.control-bottom-btn {
+    position: fixed;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+}
+
+.control-float {
+    width: 900px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.top-left-btn {
+    position: absolute;
+    top: 70px;
+    left: -63px;
+    width: 60px;
+}
+
+.bottom-right-btn {
+    position: absolute;
+    bottom: 0;
+    right: -63px;
+    width: 60px;
+}
+
+.control-float a {
+    display: block;
+    text-align: center;
+    margin-bottom: 2px;
+    border-radius: 2px;
+    font-size: 12px;
+    line-height: 24px;
+    padding-top: 8px;
+    cursor: pointer;
+}
+
+.control-float a i {
+    display: block;
+    width: 30px;
+    height: 30px;
+    margin: 0 auto;
+    background-image: url("../img/icons.png");
+}
+
+.control-float a:hover {
+    color: #808080;
+}
+
+.control-float a:nth-child(1) i {
+    background-position: -3px -46px;
+}
+
+.control-float a:nth-child(2) i {
+    background-position: -46px -45px;
+}
+
+.control-float a:nth-child(3) i {
+    background-position: -246px -41px;
+}
+
+.control-float a:nth-child(4) i {
+    background-position: 2px -105px;
+}
+
+.control-float a:nth-child(5) i {
+    background-position: -96px -47px;
+}
+
+.control-float .bottom-right-btn .up i {
+    background-position: -142px -42px;
+}
+
+.control-float .bottom-right-btn .down i {
+    background-position: -198px -45px;
+}
+
+.catalog {
+    height: 500px;
+    overflow-y: scroll;
+    margin-top: -10px;
+}
+
+.catalog ul li {
+    font-size: 16px;
+}
+
+.catalog ul li {
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+
+.catalog ul li {
+    float: left;
+    width: 470px;
+    text-indent: 20px;
+    margin: 8px 0;
+    font-size: 14px;
+}
+
+.catalog ul li {
+    color: red
+}
+
+.setting {
+    height: 24px;
+    padding: 0 20px;
+    padding-bottom: 10px;
+}
+
+.setting div {
+    float: left;
+    width: 450px;
+}
+
+.setting span {
+    float: left;
+    line-height: 24px;
+}
+
+.setting a {
+    float: left;
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+    margin-left: 15px;
+    border-radius: 5px;
+}
+
+.setting .set-bg a:nth-of-type(1) {
+    background-color: #f8f0e7;
+}
+
+.setting .set-bg a:nth-of-type(2) {
+    background-color: #83ebbb;
+}
+
+.setting .set-bg a:nth-of-type(3) {
+    background-color: #f2a298;
+}
+
+.setting .set-bg a:nth-of-type(4) {
+    background-color: #545451;
+}
+
+.setting .set-bg a.selected {
+    box-shadow: 0 0 6px 1px #646464;
+}
+
+.setting .set-font a {
+    width: 20px;
+    height: 20px;
+    color: #fff;
+    background-color: #ccc;
+    text-align: center;
+    border: solid 2px #c7c7c7;
+}
+
+.setting .set-font span {
+    margin-left: 15px;
+}
+
+.comment .comment-box {
+    width: 100%;
+    overflow: visible;
+    max-height: 175px;
+}
+
+.comment .comment-box textarea {
+    border: solid 1px #ccc;
+}
+
+.comment .comment-btn {
+    width: 60px;
+    height: 36px;
+    margin: 0 auto;
+    background-color: #dd4b39;
+    color: #fff;
+    text-align: center;
+    line-height: 36px;
+    border-radius: 5px;
+    margin-top: 30px;
+    cursor: pointer;
+}
