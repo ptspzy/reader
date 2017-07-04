@@ -6,7 +6,7 @@ var routeRegister = function(app) {
     /* 404 */
     app.use(function(req, res) {
         if (!res.headersSent) {
-            res.render('404');
+            res.render('error');
         }
     });
 
