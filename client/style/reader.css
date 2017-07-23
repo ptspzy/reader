@@ -64,7 +64,7 @@
 }
 
 .content-box .content {
-    user-select: none;
+    /*user-select: none;*/
     margin-top: 30px;
 }
 
