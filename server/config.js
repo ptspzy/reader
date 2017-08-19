@@ -1,7 +1,7 @@
 const config = {
     name: "reader",
     http: {
-        port: "3000"
+        port: 8082
     },
     static_file_folder: "../client"
 }

@@ -5,7 +5,7 @@
     var cfg = require('./config.js');
     var http = require('http');
 
-    var DEFAULT_HTTP_PORT = 3000;
+    var DEFAULT_HTTP_PORT = 8082;
     var httpPort = cfg.http.port || process.env.PORT || DEFAULT_HTTP_PORT;
 
     var http_server = http.createServer(app);

@@ -1,0 +1,5 @@
+{
+  "name": "reader:8082",
+  "watch": "true",
+  "script": "./server/default.js",
+}

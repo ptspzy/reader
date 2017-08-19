@@ -35,7 +35,7 @@ router.get('/book/:filename', function (req, res) {
         }
         var content = "<p>" + data.replace(/\r\n/g, "</p><p>") + "</p>";
         res.render('reader', {
-            title: '阅读',
+            title: fileName.split('.')[0],
             content: content
         })
     });
